@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
   <!-- La etiqueta <meta name="robots"> se aplica a todos los motores de búsqueda, mientras que la etiqueta <meta name="googlebot"> es específica de Google. -->
   <meta name="googlebot" content="index, follow" />
   <!-- Esta etiqueta se usa para proporcionar una descripción breve de la página. En algunos casos, esta descripción se usa en el fragmento que se muestra en los resultados de la búsqueda. -->
-  <meta name="description" content="Medic Majoor es un centro internacional médico especializado en cirugía plástica, dermatología y láser estético.">
+  <meta name="description"
+    content="Medic Majoor es un centro internacional médico especializado en cirugía plástica, dermatología y láser estético.">
   <title>Medic Majoor</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- Hacer un HTML semántico, así nuestro navegador lo podrá interpretar mejor -->
+
 <body>
   <header>
     <nav></nav>
@@ -22,12 +25,35 @@
   <main>
     <section>
       <article>
-        Este es un artículo 
+        Este es un artículo
       </article>
+    </section>
+    <section>
+      <figure> 
+        <!--Etiqueta contenedora donde el contenido van a ser imágenes, es un buena practica-->
+        <img 
+          src="./images/rejuvenecimiento_laser.webp"
+          alt="Chicas con rejuvenecimiento láser"
+        />
+        <img 
+        src="./images/rejuvenecimiento_laser.webp"
+        alt="Chicas con rejuvenecimiento láser"
+        />
+      </figure>
+      <figcaption>Rejuvenicimiento láser</figcaption>
+    </section>
+    <section>
+      <video controls preload="auto" height="600">
+        <source src="./videos/face.webm#t=2,8"/> 
+        <source src="./videos/face.mp4#t=2,8"/> 
+        <!--Cuando tenga varios formatos, para diferentes navegadores, el navegador elige cual utilizar, va a respetar el orden-->
+      </video>
+      <iframe width="500" height="600" src="https://www.youtube.com/embed/HdyyZwFzpkI" title="✨Contamos con el mejor equipo de depilación láser ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
   </main>
   <footer>
 
   </footer>
 </body>
+
 </html>
