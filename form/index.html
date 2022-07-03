@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+
+<body>
+	<!--SE puede poner el autocomplete a cada input-->
+	<form action="" autocomplete="on">
+		<label for="name">Nombre </label>
+		<input type="text" id="name" placeholder="Juan" name="name" required />
+		<br>
+
+		<label for="email">
+			<span>Correo</span>
+			<input type="email" id="email" name="email" required />
+		</label>
+		<br>
+
+		<!--Alternativamente, puede anidar el <input> directamente dentro de la <label>, en cuyo caso los atributos for e id no son necesarios porque la asociación es implícita:-->
+
+		<label> Fecha de matrícula
+			<input type="date" />
+		</label>
+		<br>
+
+		<label for="calendar">Fecha y hora</label>
+		<input type="datetime-local" id="calendar" />
+		<br>
+
+		<!-- Se pueden asociar varias etiquetas a un mismo control de formulario: -->
+		<label for="password">Ingresa tu clave</label>
+		<input type="password" id="password"><br>
+		<label for="password">Olvidaste tu clave?</label>
+		<br>
+
+		<!-- usar datalist mejor que select, para poder seleccionar por busqueda -->
+		<input list="courses" name="courses">
+		<datalist id="courses">
+			<option value="python">Python</option>
+			<option value="html5">HTML5</option>
+			<option value="css3">CSS3</option>
+			<option value="js">Javascript</option>
+		</datalist>
+		<!--Usar de forma directa en un formulario -->
+		<input type="submit" value="Enviar">
+		<!--Button Aunque se puede dar el mismo uso que el ejm de arriba, es mejor usarlo para cualquier otro tipo de boton que se necesite, como compartir, like, etc.-->
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+
+</html>
+
+
